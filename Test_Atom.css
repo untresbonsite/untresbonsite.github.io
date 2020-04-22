@@ -1,0 +1,66 @@
+body{
+  background: linear-gradient(40deg,#7ed6df,#fdcb6e);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.tout{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+.profil{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+ul{
+  text-align: left;
+}
+
+.fin{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+}
+.social a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+.social a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(40deg,#00cec9,#a29bfe);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+.social a:hover::before{
+  transform: scale(0);
+}
+.social a i{
+  transition: 0.3s ease-in;
+}
+.social a:hover i{
+  background: linear-gradient(45deg,#00cec9,#a29bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.0);
+}
